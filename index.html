@@ -2,78 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>Your Name</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <div class="logo">Your Name</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Hi, I'm Your Name</h2>
-      <p>A passionate Web Developer</p>
-      <a href="#projects" class="btn">View Projects</a>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+      <h2 class="typewriter">Web Developer | Designer | Learner</h2>
+      <a href="#projects" class="btn">Explore My Work</a>
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="section" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      I am a student and aspiring full-stack developer. I love building responsive and interactive web applications using modern technologies like JavaScript, React, and Spring Boot.
+      I'm a self-driven web developer focused on building engaging, accessible, and responsive interfaces using modern web technologies like JavaScript, React, and Spring Boot.
     </p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="project-grid">
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>A simple to-do list app using JavaScript.</p>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Fully responsive portfolio built using HTML, CSS & JS.</p>
       </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>Weather app that uses a public API to fetch live weather data.</p>
+      <div class="card">
+        <h3>React Contact App</h3>
+        <p>SPA with contact CRUD, connected to a Spring Boot backend.</p>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Live weather using OpenWeatherMap API & JavaScript fetch.</p>
       </div>
     </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Java</li>
-      <li>Spring Boot</li>
-    </ul>
-  </section>
-
-  <section id="contact">
+  <section id="contact" class="section" data-aos="fade-up">
     <h2>Contact Me</h2>
-    <form onsubmit="handleContact(event)">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Your Name. Built with ❤️</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
