@@ -3,41 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Static Website</title>
+  <title>Your Name | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Your Name</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
-    <h2>Simple. Clean. Static.</h2>
-    <p>This is a simple static website using HTML, CSS, and JavaScript.</p>
-    <button onclick="sayHello()">Click Me</button>
+    <div class="hero-text">
+      <h2>Hi, I'm Your Name</h2>
+      <p>A passionate Web Developer</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
   </section>
 
   <section id="about">
-    <h2>About</h2>
-    <p>This section tells you about the website. It’s clean and responsive.</p>
+    <h2>About Me</h2>
+    <p>
+      I am a student and aspiring full-stack developer. I love building responsive and interactive web applications using modern technologies like JavaScript, React, and Spring Boot.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A simple to-do list app using JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Weather app that uses a public API to fetch live weather data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Java</li>
+      <li>Spring Boot</li>
+    </ul>
   </section>
 
   <section id="contact">
-    <h2>Contact Us</h2>
-    <form onsubmit="handleSubmit(event)">
+    <h2>Contact Me</h2>
+    <form onsubmit="handleContact(event)">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 My Static Site</p>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
