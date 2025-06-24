@@ -1,8 +1,4 @@
-function sayHello() {
-  alert("Hello! Thanks for clicking the button.");
-}
-
-function handleSubmit(event) {
+function handleContact(event) {
   event.preventDefault();
-  alert("Form submitted! (but nothing is sent anywhere)");
+  alert("Thanks for reaching out! I’ll get back to you soon.");
 }
