@@ -3,7 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+button {
+  background: #333;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
